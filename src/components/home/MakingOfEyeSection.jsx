@@ -104,7 +104,7 @@ const MakingOfEyeSection = () => {
         />
 
         {/* Stage Selector Buttons */}
-        <Grid container spacing={2} sx={{ mb: 6 }} justifyContent="center">
+        <Grid container spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 4, sm: 6 } }} justifyContent="center">
           {STAGES.map((stage, idx) => {
             const isSelected = activeStage === idx;
             return (
@@ -113,8 +113,8 @@ const MakingOfEyeSection = () => {
                   onClick={() => setActiveStage(idx)}
                   elevation={0}
                   sx={{
-                    p: 2,
-                    borderRadius: 4,
+                    p: { xs: 1.2, sm: 2 },
+                    borderRadius: { xs: 3, sm: 4 },
                     textAlign: 'center',
                     cursor: 'pointer',
                     background: isSelected
@@ -131,10 +131,10 @@ const MakingOfEyeSection = () => {
                     },
                   }}
                 >
-                  <Typography variant="subtitle2" sx={{ fontWeight: 700, fontSize: '0.85rem' }}>
+                  <Typography variant="subtitle2" sx={{ fontWeight: 700, fontSize: { xs: '0.75rem', sm: '0.85rem' } }}>
                     Stage {stage.id}
                   </Typography>
-                  <Typography variant="caption" sx={{ display: 'block', opacity: 0.85, fontWeight: 500 }}>
+                  <Typography variant="caption" sx={{ display: 'block', opacity: 0.85, fontWeight: 500, fontSize: { xs: '0.65rem', sm: '0.75rem' } }}>
                     {stage.subtitle}
                   </Typography>
                 </Paper>
@@ -153,43 +153,44 @@ const MakingOfEyeSection = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
           >
-            <GlassCard dark={isDark} hover={false} sx={{ p: { xs: 3, md: 5 }, borderRadius: 5 }}>
+            <GlassCard dark={isDark} hover={false} sx={{ p: { xs: 2.5, sm: 4, md: 5 }, borderRadius: { xs: 4, sm: 5 } }}>
               <Grid container spacing={4} alignItems="center">
                 <Grid size={{ xs: 12, md: 7 }}>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
                     <Box
                       sx={{
-                        width: 52,
-                        height: 52,
+                        width: { xs: 44, sm: 52 },
+                        height: { xs: 44, sm: 52 },
                         borderRadius: '16px',
                         background: `${current.color}20`,
                         color: current.color,
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
+                        flexShrink: 0,
                       }}
                     >
-                      <IconComp sx={{ fontSize: 30 }} />
+                      <IconComp sx={{ fontSize: { xs: 24, sm: 30 } }} />
                     </Box>
                     <Box>
-                      <Typography variant="h5" sx={{ fontWeight: 800, color: isDark ? '#fff' : '#0A2540' }}>
+                      <Typography variant="h5" sx={{ fontWeight: 800, color: isDark ? '#fff' : '#0A2540', fontSize: { xs: '1.2rem', sm: '1.5rem' } }}>
                         {current.title}
                       </Typography>
-                      <Typography variant="caption" sx={{ color: current.color, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1 }}>
+                      <Typography variant="caption" sx={{ color: current.color, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1, fontSize: { xs: '0.65rem', sm: '0.75rem' } }}>
                         {current.subtitle}
                       </Typography>
                     </Box>
                   </Box>
 
-                  <Typography variant="body1" sx={{ color: isDark ? 'rgba(255,255,255,0.8)' : 'text.secondary', lineHeight: 1.8, fontSize: '1rem', mb: 3 }}>
+                  <Typography variant="body1" sx={{ color: isDark ? 'rgba(255,255,255,0.8)' : 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.9rem', sm: '1rem' }, mb: 3 }}>
                     {current.description}
                   </Typography>
 
                   <Stack spacing={1.5} sx={{ mb: 4 }}>
                     {current.bullets.map((b, i) => (
                       <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-                        <CheckCircleIcon sx={{ color: current.color, fontSize: 20 }} />
-                        <Typography variant="body2" sx={{ fontWeight: 500, color: isDark ? '#fff' : '#0A2540' }}>
+                        <CheckCircleIcon sx={{ color: current.color, fontSize: 20, flexShrink: 0 }} />
+                        <Typography variant="body2" sx={{ fontWeight: 500, color: isDark ? '#fff' : '#0A2540', fontSize: { xs: '0.85rem', sm: '0.88rem' } }}>
                           {b}
                         </Typography>
                       </Box>
@@ -203,6 +204,7 @@ const MakingOfEyeSection = () => {
                       borderRadius: '50px',
                       px: 4,
                       py: 1.4,
+                      width: { xs: '100%', sm: 'auto' },
                       background: 'linear-gradient(135deg, #2563EB, #10B981)',
                       fontWeight: 600,
                     }}
@@ -215,7 +217,7 @@ const MakingOfEyeSection = () => {
                 <Grid size={{ xs: 12, md: 5 }}>
                   <Box
                     sx={{
-                      borderRadius: 5,
+                      borderRadius: { xs: 4, sm: 5 },
                       overflow: 'hidden',
                       boxShadow: '0 15px 40px rgba(0,0,0,0.4)',
                       border: '1px solid rgba(255,255,255,0.1)',
@@ -232,7 +234,7 @@ const MakingOfEyeSection = () => {
                       alt={current.imageAlt}
                       sx={{
                         width: '100%',
-                        height: 280,
+                        height: { xs: 200, sm: 280 },
                         objectFit: 'cover',
                         display: 'block',
                       }}
@@ -248,9 +250,9 @@ const MakingOfEyeSection = () => {
                     <Box sx={{ position: 'absolute', bottom: 16, left: 16, right: 16 }}>
                       <Chip
                         label={`Clinical Stage 0${current.id} of 04`}
-                        sx={{ background: current.color, color: '#fff', fontWeight: 700, mb: 1 }}
+                        sx={{ background: current.color, color: '#fff', fontWeight: 700, mb: 1, fontSize: '0.72rem' }}
                       />
-                      <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.85)', fontWeight: 500, lineHeight: 1.5, fontSize: '0.82rem' }}>
+                      <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.85)', fontWeight: 500, lineHeight: 1.5, fontSize: { xs: '0.75rem', sm: '0.82rem' } }}>
                         Every phase is personally executed by Senior Specialist Dr. Shashank Mishra to ensure maximum comfort, lifelike iris depth, and precise symmetry.
                       </Typography>
                     </Box>

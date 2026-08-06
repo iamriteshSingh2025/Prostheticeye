@@ -51,7 +51,7 @@ const DoctorSection = () => {
                 }}
               >
                 {/* Top full-width image */}
-                <Box sx={{ width: '100%', height: 240, overflow: 'hidden', borderRadius: '16px 16px 0 0' }}>
+                <Box sx={{ width: '100%', height: { xs: 190, sm: 240 }, overflow: 'hidden', borderRadius: '16px 16px 0 0' }}>
                   <Box
                     component="img"
                     src={eye2Img}
@@ -65,7 +65,7 @@ const DoctorSection = () => {
                   sx={{
                     borderRadius: '0 0 16px 16px',
                     background: 'linear-gradient(180deg, rgba(10,37,64,0.8) 0%, rgba(10,37,64,0.98) 100%)',
-                    p: 3,
+                    p: { xs: 2, sm: 3 },
                     color: '#fff',
                     position: 'relative',
                   }}
@@ -106,20 +106,21 @@ const DoctorSection = () => {
                     sx={{
                       fontFamily: "'Playfair Display', serif",
                       fontWeight: 800,
+                      fontSize: { xs: '1.25rem', sm: '1.5rem' },
                     }}
                   >
                     {DOCTOR.name}
                   </Typography>
 
-                  <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.8)', mb: 2 }}>
+                  <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.8)', mb: 2, fontSize: { xs: '0.8rem', sm: '0.88rem' } }}>
                     {DOCTOR.experience} Clinical Practice • {DOCTOR.patientsHelped} Patients
                   </Typography>
 
                   <Stack spacing={0.8}>
                     {DOCTOR.qualifications.slice(0, 3).map((q, i) => (
                       <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                        <SchoolIcon sx={{ color: '#2563EB', fontSize: 16 }} />
-                        <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.8rem' }}>
+                        <SchoolIcon sx={{ color: '#2563EB', fontSize: 16, flexShrink: 0 }} />
+                        <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.9)', fontSize: { xs: '0.75rem', sm: '0.8rem' } }}>
                           {q}
                         </Typography>
                       </Box>
@@ -163,6 +164,7 @@ const DoctorSection = () => {
                 color: isDark ? 'rgba(255,255,255,0.8)' : 'text.secondary',
                 lineHeight: 1.8,
                 mb: 4,
+                fontSize: { xs: '0.9rem', sm: '1rem' },
                 whiteSpace: 'pre-line',
               }}
             >
@@ -170,7 +172,7 @@ const DoctorSection = () => {
             </Typography>
 
             {/* Specializations */}
-            <Typography variant="h6" sx={{ fontWeight: 700, mb: 2, color: isDark ? '#fff' : '#0A2540' }}>
+            <Typography variant="h6" sx={{ fontWeight: 700, mb: 2, color: isDark ? '#fff' : '#0A2540', fontSize: { xs: '1.05rem', sm: '1.25rem' } }}>
               Areas of Clinical Mastery
             </Typography>
 
@@ -178,8 +180,8 @@ const DoctorSection = () => {
               {DOCTOR.specializations.map((spec, i) => (
                 <Grid size={{ xs: 12, sm: 6 }} key={i}>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <CheckCircleIcon sx={{ color: '#10B981', fontSize: 20 }} />
-                    <Typography variant="body2" sx={{ fontWeight: 500, color: isDark ? 'rgba(255,255,255,0.9)' : 'text.primary' }}>
+                    <CheckCircleIcon sx={{ color: '#10B981', fontSize: 20, flexShrink: 0 }} />
+                    <Typography variant="body2" sx={{ fontWeight: 500, color: isDark ? 'rgba(255,255,255,0.9)' : 'text.primary', fontSize: { xs: '0.85rem', sm: '0.88rem' } }}>
                       {spec}
                     </Typography>
                   </Box>
@@ -195,6 +197,7 @@ const DoctorSection = () => {
               sx={{
                 py: 1.6,
                 px: 4,
+                width: { xs: '100%', sm: 'auto' },
                 borderRadius: '50px',
                 background: 'linear-gradient(135deg, #2563EB, #10B981)',
                 fontWeight: 600,

@@ -49,28 +49,29 @@ const FAQSection = () => {
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon sx={{ color: '#2563EB' }} />}
-                sx={{ px: 3, py: 1 }}
+                sx={{ px: { xs: 2, sm: 3 }, py: { xs: 0.5, sm: 1 } }}
               >
                 <Typography
                   variant="h6"
                   sx={{
                     fontWeight: 600,
-                    fontSize: '1.05rem',
+                    fontSize: { xs: '0.92rem', sm: '1.05rem' },
                     color: isDark ? '#fff' : theme.palette.text.primary,
                     fontFamily: "'Poppins', sans-serif",
+                    lineHeight: 1.5,
                   }}
                 >
                   {faq.question}
                 </Typography>
               </AccordionSummary>
 
-              <AccordionDetails sx={{ px: 3, pb: 3, pt: 0 }}>
+              <AccordionDetails sx={{ px: { xs: 2, sm: 3 }, pb: { xs: 2, sm: 3 }, pt: 0 }}>
                 <Typography
                   variant="body1"
                   sx={{
                     color: isDark ? 'rgba(255,255,255,0.75)' : 'text.secondary',
-                    fontSize: '0.95rem',
-                    lineHeight: 1.8,
+                    fontSize: { xs: '0.85rem', sm: '0.95rem' },
+                    lineHeight: { xs: 1.6, sm: 1.8 },
                     fontFamily: "'Poppins', sans-serif",
                   }}
                 >

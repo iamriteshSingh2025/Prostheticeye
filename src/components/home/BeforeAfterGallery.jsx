@@ -102,7 +102,7 @@ const BeforeAfterGallery = () => {
                   <Box
                     sx={{
                       width: '100%',
-                      height: 240,
+                      height: { xs: 190, sm: 240 },
                       borderRadius: 4,
                       overflow: 'hidden',
                       mb: 3,
@@ -143,7 +143,7 @@ const BeforeAfterGallery = () => {
                         background: isShowingAfter ? 'rgba(16,185,129,0.9)' : 'rgba(245,158,11,0.9)',
                         color: '#fff',
                         fontWeight: 700,
-                        fontSize: '0.75rem',
+                        fontSize: { xs: '0.68rem', sm: '0.75rem' },
                         backdropFilter: 'blur(8px)',
                       }}
                     />
@@ -155,9 +155,10 @@ const BeforeAfterGallery = () => {
                         position: 'absolute',
                         bottom: 12,
                         left: 12,
+                        right: 120,
                         color: '#fff',
                         fontWeight: 600,
-                        fontSize: '0.78rem',
+                        fontSize: { xs: '0.7rem', sm: '0.78rem' },
                         textShadow: '0 1px 4px rgba(0,0,0,0.8)',
                       }}
                     >
@@ -192,17 +193,17 @@ const BeforeAfterGallery = () => {
                   </Box>
 
                   {/* Info */}
-                  <Typography variant="h6" sx={{ fontWeight: 800, color: isDark ? '#fff' : '#0A2540', mb: 0.4, fontSize: '1.05rem' }}>
+                  <Typography variant="h6" sx={{ fontWeight: 800, color: isDark ? '#fff' : '#0A2540', mb: 0.4, fontSize: { xs: '0.98rem', sm: '1.05rem' } }}>
                     {item.title}
                   </Typography>
-                  <Typography variant="subtitle2" sx={{ color: '#2563EB', fontWeight: 600, mb: 1, fontSize: '0.85rem' }}>
+                  <Typography variant="subtitle2" sx={{ color: '#2563EB', fontWeight: 600, mb: 1, fontSize: { xs: '0.8rem', sm: '0.85rem' } }}>
                     {item.condition}
                   </Typography>
                   <Typography variant="body2" sx={{ color: isDark ? 'rgba(255,255,255,0.65)' : 'text.secondary', mb: 2.5, fontSize: '0.82rem' }}>
                     Patient: {item.patient}
                   </Typography>
 
-                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', pt: 2, borderTop: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}` }}>
+                  <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: 'space-between', alignItems: { xs: 'flex-start', sm: 'center' }, gap: 1.5, pt: 2, borderTop: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}` }}>
                     <Rating value={item.rating} readOnly precision={0.5} icon={<StarIcon sx={{ color: '#F59E0B', fontSize: 18 }} />} emptyIcon={<StarIcon sx={{ fontSize: 18 }} />} />
                     <Button
                       variant="contained"
@@ -211,6 +212,7 @@ const BeforeAfterGallery = () => {
                         borderRadius: '50px',
                         px: 3,
                         py: 0.7,
+                        width: { xs: '100%', sm: 'auto' },
                         fontSize: '0.8rem',
                         background: 'linear-gradient(135deg, #2563EB, #10B981)',
                         fontWeight: 600,

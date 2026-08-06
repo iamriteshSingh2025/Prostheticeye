@@ -20,7 +20,7 @@ const Footer = () => {
       sx={{
         background: 'linear-gradient(180deg, #061828 0%, #030a12 100%)',
         color: '#ffffff',
-        pt: 10,
+        pt: { xs: 6, md: 10 },
         pb: 4,
         position: 'relative',
         overflow: 'hidden',

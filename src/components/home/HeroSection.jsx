@@ -131,9 +131,9 @@ const HeroSection = () => {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: '2.5rem', sm: '3.4rem', lg: '4rem' },
+                  fontSize: { xs: '2rem', sm: '3.2rem', lg: '4rem' },
                   fontWeight: 800,
-                  lineHeight: 1.12,
+                  lineHeight: 1.15,
                   mb: 2.5,
                   fontFamily: "'Playfair Display', serif",
                 }}
@@ -157,10 +157,10 @@ const HeroSection = () => {
               <Typography
                 variant="h6"
                 sx={{
-                  fontSize: { xs: '1.05rem', sm: '1.2rem' },
+                  fontSize: { xs: '0.95rem', sm: '1.2rem' },
                   color: 'rgba(255, 255, 255, 0.85)',
                   fontWeight: 400,
-                  lineHeight: 1.7,
+                  lineHeight: { xs: 1.6, sm: 1.7 },
                   mb: 4,
                   maxWidth: 620,
                   fontFamily: "'Poppins', sans-serif",
@@ -170,16 +170,17 @@ const HeroSection = () => {
               </Typography>
 
               {/* Action Buttons */}
-              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mb: 4 }}>
+              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1.5} sx={{ mb: 4, width: '100%' }}>
                 <Button
                   variant="contained"
                   size="large"
                   startIcon={<CalendarMonthIcon />}
                   onClick={openAppointment}
                   sx={{
-                    py: 1.8,
-                    px: 4,
-                    fontSize: '1rem',
+                    py: 1.6,
+                    px: 3.5,
+                    width: { xs: '100%', sm: 'auto' },
+                    fontSize: '0.95rem',
                     fontWeight: 600,
                     borderRadius: '50px',
                     background: 'linear-gradient(135deg, #2563EB 0%, #10B981 100%)',
@@ -201,9 +202,10 @@ const HeroSection = () => {
                   component="a"
                   href={`tel:${SITE_CONFIG.phone}`}
                   sx={{
-                    py: 1.8,
-                    px: 3.5,
-                    fontSize: '1rem',
+                    py: 1.6,
+                    px: 3,
+                    width: { xs: '100%', sm: 'auto' },
+                    fontSize: '0.95rem',
                     fontWeight: 600,
                     borderRadius: '50px',
                     color: '#fff',
@@ -230,9 +232,10 @@ const HeroSection = () => {
                   target="_blank"
                   rel="noreferrer"
                   sx={{
-                    py: 1.8,
-                    px: 3.5,
-                    fontSize: '1rem',
+                    py: 1.6,
+                    px: 3,
+                    width: { xs: '100%', sm: 'auto' },
+                    fontSize: '0.95rem',
                     fontWeight: 600,
                     borderRadius: '50px',
                     background: '#25D366',

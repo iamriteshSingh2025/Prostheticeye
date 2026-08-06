@@ -19,7 +19,7 @@ const SectionTitle = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      sx={{ textAlign: centered ? 'center' : 'left', mb: 6 }}
+      sx={{ textAlign: centered ? 'center' : 'left', mb: { xs: 4, sm: 6 } }}
     >
       {subtitle && (
         <Typography
@@ -27,10 +27,10 @@ const SectionTitle = ({
           sx={{
             color: accentColor,
             fontWeight: 600,
-            letterSpacing: 3,
-            fontSize: '0.8rem',
+            letterSpacing: { xs: 1.5, sm: 3 },
+            fontSize: { xs: '0.72rem', sm: '0.8rem' },
             textTransform: 'uppercase',
-            mb: 1,
+            mb: 0.8,
             display: 'block',
             fontFamily: "'Poppins', sans-serif",
           }}
@@ -42,11 +42,11 @@ const SectionTitle = ({
       <Typography
         variant="h2"
         sx={{
-          fontSize: { xs: '2rem', md: '2.8rem', lg: '3.2rem' },
+          fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.8rem', lg: '3.2rem' },
           fontWeight: 700,
           color: light ? '#ffffff' : theme.palette.text.primary,
-          lineHeight: 1.2,
-          mb: 2,
+          lineHeight: { xs: 1.25, md: 1.2 },
+          mb: { xs: 1.5, sm: 2 },
           '& span': {
             background: `linear-gradient(135deg, #2563EB, ${accentColor})`,
             WebkitBackgroundClip: 'text',
@@ -65,8 +65,8 @@ const SectionTitle = ({
             color: light ? 'rgba(255,255,255,0.8)' : theme.palette.text.secondary,
             maxWidth: centered ? 600 : '100%',
             mx: centered ? 'auto' : 0,
-            fontSize: '1.05rem',
-            lineHeight: 1.8,
+            fontSize: { xs: '0.88rem', sm: '1.05rem' },
+            lineHeight: { xs: 1.6, sm: 1.8 },
             fontFamily: "'Poppins', sans-serif",
           }}
         >

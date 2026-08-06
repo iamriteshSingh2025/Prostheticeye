@@ -36,12 +36,12 @@ const FloatingButtons = () => {
     <Box
       sx={{
         position: 'fixed',
-        bottom: 24,
-        right: 24,
+        bottom: { xs: 16, sm: 24 },
+        right: { xs: 16, sm: 24 },
         zIndex: 1000,
         display: 'flex',
         flexDirection: 'column',
-        gap: 1.5,
+        gap: { xs: 1, sm: 1.5 },
         alignItems: 'center',
       }}
     >

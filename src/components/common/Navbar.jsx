@@ -120,9 +120,9 @@ const Navbar = () => {
           >
             <Box
               sx={{
-                width: 46,
-                height: 46,
-                borderRadius: '14px',
+                width: { xs: 38, sm: 46 },
+                height: { xs: 38, sm: 46 },
+                borderRadius: { xs: '10px', sm: '14px' },
                 background: 'linear-gradient(135deg, #2563EB 0%, #10B981 100%)',
                 display: 'flex',
                 alignItems: 'center',
@@ -132,7 +132,7 @@ const Navbar = () => {
                 '&:hover': { transform: 'scale(1.05) rotate(5deg)' },
               }}
             >
-              <RemoveRedEyeIcon sx={{ color: '#fff', fontSize: 26 }} />
+              <RemoveRedEyeIcon sx={{ color: '#fff', fontSize: { xs: 22, sm: 26 } }} />
             </Box>
             <Box>
               <Typography
@@ -140,7 +140,7 @@ const Navbar = () => {
                 sx={{
                   fontFamily: "'Playfair Display', serif",
                   fontWeight: 800,
-                  fontSize: { xs: '1.2rem', lg: '1.35rem' },
+                  fontSize: { xs: '1.05rem', sm: '1.2rem', lg: '1.35rem' },
                   color: scrolled && !isDark ? '#0A2540' : '#ffffff',
                   lineHeight: 1,
                   letterSpacing: '-0.3px',
@@ -150,9 +150,9 @@ const Navbar = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: '0.62rem',
+                  fontSize: { xs: '0.55rem', sm: '0.62rem' },
                   color: '#10B981',
-                  letterSpacing: 1.8,
+                  letterSpacing: 1.5,
                   textTransform: 'uppercase',
                   fontWeight: 700,
                   mt: 0.4,
@@ -340,7 +340,7 @@ const Navbar = () => {
         onClose={() => setDrawerOpen(false)}
         PaperProps={{
           sx: {
-            width: 320,
+            width: { xs: 280, sm: 320 },
             background: isDark ? '#030914' : '#ffffff',
             color: isDark ? '#ffffff' : '#0A2540',
           },

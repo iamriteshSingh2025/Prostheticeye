@@ -35,11 +35,11 @@ const ServicesSection = () => {
         {/* Category Filters */}
         <Stack
           direction="row"
-          spacing={1.5}
+          spacing={1}
           justifyContent="center"
           useFlexGap
           flexWrap="wrap"
-          sx={{ mb: 6 }}
+          sx={{ mb: { xs: 4, sm: 6 } }}
         >
           {SERVICE_CATEGORIES.map((cat) => {
             const isSelected = activeCategory === cat;
@@ -49,11 +49,12 @@ const ServicesSection = () => {
                 label={cat}
                 onClick={() => setActiveCategory(cat)}
                 sx={{
-                  px: 2,
-                  py: 2.2,
+                  px: { xs: 1.2, sm: 2 },
+                  py: 1,
+                  height: 'auto',
                   borderRadius: '50px',
                   fontWeight: 600,
-                  fontSize: '0.88rem',
+                  fontSize: { xs: '0.78rem', sm: '0.88rem' },
                   cursor: 'pointer',
                   background: isSelected
                     ? 'linear-gradient(135deg, #2563EB, #10B981)'

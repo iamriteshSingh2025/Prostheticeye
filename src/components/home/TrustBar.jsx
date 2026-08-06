@@ -69,7 +69,7 @@ const TrustBar = () => {
                     value={stat.value}
                     suffix={stat.suffix}
                     sx={{
-                      fontSize: { xs: '2rem', md: '2.5rem' },
+                      fontSize: { xs: '1.6rem', sm: '2.2rem', md: '2.5rem' },
                       fontWeight: 800,
                       fontFamily: "'Playfair Display', serif",
                       color: '#ffffff',
@@ -82,7 +82,7 @@ const TrustBar = () => {
                     sx={{
                       color: 'rgba(255, 255, 255, 0.75)',
                       fontWeight: 500,
-                      fontSize: '0.9rem',
+                      fontSize: { xs: '0.78rem', sm: '0.9rem' },
                       fontFamily: "'Poppins', sans-serif",
                     }}
                   >
