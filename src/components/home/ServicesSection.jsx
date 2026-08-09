@@ -22,6 +22,7 @@ const ServicesSection = () => {
         py: { xs: 8, md: 12 },
         background: isDark ? '#061426' : '#FFFFFF',
         position: 'relative',
+        overflow: 'hidden',
       }}
     >
       <Container maxWidth="lg">
@@ -33,48 +34,73 @@ const ServicesSection = () => {
         />
 
         {/* Category Filters */}
-        <Stack
-          direction="row"
-          spacing={1}
-          justifyContent="center"
-          useFlexGap
-          flexWrap="wrap"
-          sx={{ mb: { xs: 4, sm: 6 } }}
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: { xs: 'flex-start', sm: 'center' },
+            width: '100%',
+            maxWidth: '100%',
+            overflowX: 'auto',
+            mb: { xs: 4, sm: 6 },
+            py: 1,
+            px: { xs: 1, sm: 0 },
+            WebkitOverflowScrolling: 'touch',
+            scrollbarWidth: 'none',
+            '&::-webkit-scrollbar': {
+              display: 'none',
+            },
+          }}
         >
-          {SERVICE_CATEGORIES.map((cat) => {
-            const isSelected = activeCategory === cat;
-            return (
-              <Chip
-                key={cat}
-                label={cat}
-                onClick={() => setActiveCategory(cat)}
-                sx={{
-                  px: { xs: 1.2, sm: 2 },
-                  py: 1,
-                  height: 'auto',
-                  borderRadius: '50px',
-                  fontWeight: 600,
-                  fontSize: { xs: '0.78rem', sm: '0.88rem' },
-                  cursor: 'pointer',
-                  background: isSelected
-                    ? 'linear-gradient(135deg, #2563EB, #10B981)'
-                    : isDark
-                    ? 'rgba(255,255,255,0.06)'
-                    : 'rgba(10, 37, 64, 0.05)',
-                  color: isSelected ? '#ffffff' : isDark ? '#94a3b8' : '#0A2540',
-                  boxShadow: isSelected ? '0 6px 20px rgba(37,99,235,0.3)' : 'none',
-                  border: isSelected ? 'none' : `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}`,
-                  '&:hover': {
+          <Stack
+            direction="row"
+            spacing={{ xs: 1, sm: 1.5 }}
+            justifyContent={{ xs: 'flex-start', sm: 'center' }}
+            alignItems="center"
+            sx={{
+              minWidth: { xs: 'max-content', sm: 'auto' },
+              flexWrap: { xs: 'nowrap', sm: 'wrap' },
+              mx: { sm: 'auto' },
+            }}
+          >
+            {SERVICE_CATEGORIES.map((cat) => {
+              const isSelected = activeCategory === cat;
+              return (
+                <Chip
+                  key={cat}
+                  label={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  sx={{
+                    px: { xs: 1.8, sm: 2.5 },
+                    py: 1.2,
+                    height: 'auto',
+                    minHeight: '38px',
+                    borderRadius: '50px',
+                    fontWeight: 600,
+                    fontSize: { xs: '0.8rem', sm: '0.88rem' },
+                    cursor: 'pointer',
+                    whiteSpace: 'nowrap',
+                    flexShrink: 0,
                     background: isSelected
                       ? 'linear-gradient(135deg, #2563EB, #10B981)'
-                      : 'rgba(37,99,235,0.1)',
-                  },
-                  transition: 'all 0.3s ease',
-                }}
-              />
-            );
-          })}
-        </Stack>
+                      : isDark
+                      ? 'rgba(255,255,255,0.06)'
+                      : 'rgba(10, 37, 64, 0.05)',
+                    color: isSelected ? '#ffffff' : isDark ? '#94a3b8' : '#0A2540',
+                    boxShadow: isSelected ? '0 6px 20px rgba(37,99,235,0.3)' : 'none',
+                    border: isSelected ? 'none' : `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'}`,
+                    '&:hover': {
+                      background: isSelected
+                        ? 'linear-gradient(135deg, #2563EB, #10B981)'
+                        : 'rgba(37,99,235,0.1)',
+                      transform: 'translateY(-1px)',
+                    },
+                    transition: 'all 0.25s ease',
+                  }}
+                />
+              );
+            })}
+          </Stack>
+        </Box>
 
         {/* Services Grid */}
         <Grid container spacing={3.5}>

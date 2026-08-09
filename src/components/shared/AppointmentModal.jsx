@@ -143,7 +143,6 @@ const AppointmentModal = () => {
                     fullWidth
                     required
                     type="date"
-                    label="Preferred Date"
                     InputLabelProps={{ shrink: true, style: { color: 'rgba(255,255,255,0.7)' } }}
                     InputProps={{ style: { color: '#fff' } }}
                     value={formData.date}

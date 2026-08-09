@@ -70,7 +70,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8 }}
             >
               {/* Badges Stack */}
-              <Stack direction="row" spacing={1.5} flexWrap="wrap" useFlexGap sx={{ mb: 3 }}>
+              <Stack direction="row" spacing={1.5} useFlexGap sx={{ mb: 3, flexWrap: 'wrap' }}>
                 <Box
                   sx={{
                     display: 'inline-flex',
