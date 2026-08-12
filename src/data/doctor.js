@@ -1,7 +1,12 @@
 export const DOCTOR = {
-  name: 'Dr. Shashank Mishra',
-  title: 'Ocular Prosthetics Specialist',
-  qualifications: ['B.Sc. (Optics & Optometry)', 'Certified Ocularist', 'Diploma in Ocular Prosthetics', 'Advanced Training in Maxillofacial Prosthetics'],
+  name: 'Mr. Shashank Mishra',
+  title: 'Consultant Optometrist & Ocularist',
+  qualifications: [
+    'M.Optom',
+    'B.Optom',
+    'FSCEH (Delhi)',
+    'Fellow – Silverline Laboratories'
+  ],
   experience: '15+ Years',
   patientsHelped: '5000+',
   mission: 'To provide every patient with the highest quality artificial eye prosthetics, combining technical precision with compassionate care, restoring not just appearance but confidence and quality of life.',
@@ -31,6 +36,30 @@ His journey began with a deep commitment to helping patients who had suffered th
 Dr. Mishra is known for his extraordinary attention to detail in color-matching and iris painting, creating artificial eyes that are virtually indistinguishable from the natural eye. His patients often report that friends and family cannot tell the difference.
 
 He believes that every patient deserves world-class care regardless of their background, and strives to make advanced prosthetic services accessible and affordable to all.`,
+};
+
+export const SECOND_DOCTOR = {
+  name: 'Mr. Sharad Kumar Mishra',
+  title: 'Consultant Optometrist & Speciality Contact Lens Expert',
+  qualifications: [
+    'M.Optom',
+    'B.Optom',
+    'FSCEH (Delhi)',
+    'Fellow – Silverline Laboratories'
+  ],
+  specializations: [
+    'Speciality Contact Lens Fitting',
+    'Scleral & Mini-Scleral Lenses',
+    'Rose K Lenses for Keratoconus',
+    'Orthokeratology (Ortho-K)',
+    'Prosthetic & Cosmetic Contact Lenses',
+    'Custom Soft & Multifocal Lenses',
+  ],
+  about: `Mr. Sharad Kumar Mishra is a highly qualified Consultant Optometrist and Speciality Contact Lens Expert at UB Eye Care. With advanced clinical training in speciality contact lens fitting and corneal management, he brings precision diagnostics and personalised care to every patient.
+
+A Fellow of Dr. Shroff's Charity Eye Hospital (FSCEH), Delhi, and Silverline Laboratories, Mr. Sharad Kumar Mishra specialises in complex contact lens solutions for patients with Keratoconus, corneal irregularities, severe dry eye, and post-surgical complications.
+
+His expertise spans Scleral lenses, Rose K lenses, Orthokeratology (Ortho-K), RGP lenses, and Prosthetic contact lenses — ensuring that every patient receives the most advanced, comfortable, and clinically precise lens fitting available.`,
 };
 
 export const TREATMENT_STEPS = [

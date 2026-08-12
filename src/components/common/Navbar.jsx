@@ -28,10 +28,10 @@ const NAV_ITEMS = [
     path: '/services',
     dropdown: [
       { label: 'Custom Artificial Eye', path: '/services/artificial-eye' },
-      { label: 'Ocular Prosthesis', path: '/services' },
-      { label: 'Scleral Shell Prosthetics', path: '/services' },
-      { label: 'Orbital & Facial Prosthesis', path: '/services' },
-      { label: 'All 12 Specializations', path: '/services' }
+      { label: 'Speciality Contact Lens', path: '/services/speciality-contact-lens' },
+      { label: 'Optical Services (U.B. Eye Care)', path: '/services/optical-services' },
+      { label: 'Prosthetic Eye Care', path: '/services?tab=prosthetics' },
+      { label: 'All Clinical Services', path: '/services' }
     ]
   },
   { label: 'Treatment Process', path: '/treatment' },

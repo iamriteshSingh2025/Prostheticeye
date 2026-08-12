@@ -14,6 +14,8 @@ import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ArtificialEyePage from './pages/ArtificialEyePage';
+import SpecialityContactLensPage from './pages/SpecialityContactLensPage';
+import OpticalServicesPage from './pages/OpticalServicesPage';
 import TreatmentPage from './pages/TreatmentPage';
 import GalleryPage from './pages/GalleryPage';
 import PatientStoriesPage from './pages/PatientStoriesPage';
@@ -60,6 +62,8 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/services/artificial-eye" element={<ArtificialEyePage />} />
+                <Route path="/services/speciality-contact-lens" element={<SpecialityContactLensPage />} />
+                <Route path="/services/optical-services" element={<OpticalServicesPage />} />
                 <Route path="/treatment" element={<TreatmentPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/patient-stories" element={<PatientStoriesPage />} />

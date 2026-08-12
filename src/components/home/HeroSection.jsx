@@ -13,6 +13,7 @@ import { SITE_CONFIG } from '../../data/config';
 import { useAppointment } from '../../context/AppointmentContext';
 import heroImg from '../../assets/hero.png';
 import eye1Img from '../../assets/eye1.png';
+import drShashankImg from '../../assets/Shashank photo.jpeg';
 
 const HeroSection = () => {
   const { openAppointment } = useAppointment();
@@ -409,10 +410,30 @@ const HeroSection = () => {
                   <Chip label="Verified Clinic" size="small" sx={{ background: '#10B981', color: '#fff', fontWeight: 700, fontSize: '0.7rem' }} />
                 </Box>
 
-                <Box sx={{ pt: 1.5, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                  <Typography variant="caption" sx={{ color: '#2563EB', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1 }}>
-                    Led by Dr. Shashank Mishra • 15+ Years Clinical Practice
-                  </Typography>
+                <Box sx={{ pt: 1.5, borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', gap: 1.5 }}>
+                  <Box
+                    component="img"
+                    src={drShashankImg}
+                    alt="Dr. Shashank Mishra"
+                    sx={{
+                      width: 44,
+                      height: 44,
+                      borderRadius: '50%',
+                      objectFit: 'cover',
+                      objectPosition: 'center top',
+                      border: '2px solid #10B981',
+                      boxShadow: '0 4px 12px rgba(16,185,129,0.3)',
+                      flexShrink: 0,
+                    }}
+                  />
+                  <Box>
+                    <Typography variant="subtitle2" sx={{ color: '#fff', fontWeight: 700, fontSize: '0.85rem', lineHeight: 1.2 }}>
+                      Mr. Shashank Mishra
+                    </Typography>
+                    <Typography variant="caption" sx={{ color: '#10B981', fontWeight: 600, fontSize: '0.72rem' }}>
+                      Consultant Optometrist & Ocularist • M.Optom, FSCEH (Delhi)
+                    </Typography>
+                  </Box>
                 </Box>
               </GlassCard>
             </Box>

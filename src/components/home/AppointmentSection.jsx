@@ -6,6 +6,7 @@ import SectionTitle from '../shared/SectionTitle';
 import GlassCard from '../shared/GlassCard';
 import { useThemeMode } from '../../context/ThemeContext';
 import { useAppointment } from '../../context/AppointmentContext';
+import drShashankImg from '../../assets/Shashank photo.jpeg';
 
 const AppointmentSection = () => {
   const { mode } = useThemeMode();
@@ -37,12 +38,38 @@ const AppointmentSection = () => {
         <SectionTitle
           subtitle="Priority Reservation"
           title="Book Your Consultation Today"
-          description="Take the first step toward restoring your natural look. Reserve your appointment with Dr. Shashank Mishra."
+          description="Take the first step toward restoring your natural look. Reserve your appointment with Mr. Shashank Mishra."
           centered={true}
           light={true}
         />
 
         <GlassCard dark={true} hover={false} sx={{ p: { xs: 3, sm: 5 }, borderRadius: 5 }}>
+          {/* Doctor Info Header */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4, p: 2, borderRadius: 3, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <Box
+              component="img"
+              src={drShashankImg}
+              alt="Mr. Shashank Mishra"
+              sx={{
+                width: 60,
+                height: 60,
+                borderRadius: '50%',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                border: '2px solid #10B981',
+                boxShadow: '0 4px 15px rgba(16,185,129,0.3)',
+                flexShrink: 0,
+              }}
+            />
+            <Box>
+              <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#fff' }}>
+                Consultation with Mr. Shashank Mishra
+              </Typography>
+              <Typography variant="caption" sx={{ color: '#10B981', fontWeight: 600, display: 'block' }}>
+                Consultant Optometrist & Ocularist • M.Optom | B.Optom | FSCEH (Delhi) | Fellow – Silverline
+              </Typography>
+            </Box>
+          </Box>
           {!submitted ? (
             <Box component="form" onSubmit={handleSubmit}>
               <Grid container spacing={2.5}>

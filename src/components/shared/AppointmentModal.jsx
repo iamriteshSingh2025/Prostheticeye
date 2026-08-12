@@ -7,6 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { useAppointment } from '../../context/AppointmentContext';
+import drShashankImg from '../../assets/Shashank photo.jpeg';
 
 const AppointmentModal = () => {
   const { appointmentOpen, closeAppointment, formData, updateFormData, resetForm } = useAppointment();
@@ -60,12 +61,27 @@ const AppointmentModal = () => {
 
         {!submitted ? (
           <>
-            <Box sx={{ mb: 4, textAlign: 'center' }}>
+            <Box sx={{ mb: 4, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <Box
+                component="img"
+                src={drShashankImg}
+                alt="Dr. Shashank Mishra"
+                sx={{
+                  width: 72,
+                  height: 72,
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  border: '3px solid #10B981',
+                  boxShadow: '0 6px 20px rgba(16,185,129,0.35)',
+                  mb: 1.5,
+                }}
+              />
               <Typography
                 variant="overline"
-                sx={{ color: '#10B981', fontWeight: 600, letterSpacing: 2 }}
+                sx={{ color: '#10B981', fontWeight: 700, letterSpacing: 2 }}
               >
-                World-Class Eye Care
+                Direct Consultation
               </Typography>
               <Typography
                 variant="h4"
@@ -74,12 +90,13 @@ const AppointmentModal = () => {
                   fontWeight: 700,
                   color: '#fff',
                   mt: 0.5,
+                  fontSize: { xs: '1.5rem', sm: '1.8rem' },
                 }}
               >
-                Book Personal Consultation
+                Book Appointment with Mr. Shashank Mishra
               </Typography>
-              <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.7)', mt: 1 }}>
-                Consult Dr. Shashank Mishra for a custom natural-looking artificial eye fitting.
+              <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.7)', mt: 0.8, maxWidth: 520 }}>
+                Consultant Optometrist & Ocularist • M.Optom | B.Optom | FSCEH (Delhi) | Fellow – Silverline
               </Typography>
             </Box>
 
