@@ -20,7 +20,7 @@ const TRANSFORMATIONS = [
     condition: 'Post-Traumatic Eye Loss Restoration',
     category: 'Before & After',
     beforeLabel: 'Microphthalmos / Loss of Natural Eye',
-    afterLabel: 'Hand-Crafted 3D Iris Artificial Eye',
+    afterLabel: 'Hand-Crafted 3D Eye Artificial Eye',
     afterImage: eye1,
     beforeImage: eye4,
     rating: 5,
@@ -28,23 +28,23 @@ const TRANSFORMATIONS = [
   },
   {
     id: 2,
-    title: 'Ultra-Thin Scleral Shell',
-    condition: 'Shrunken Blind Eye Aesthetic Coating',
+    title: 'Precision Color & Iris Matching',
+    condition: 'Anophthalmic Socket Fitting',
     category: 'Before & After',
-    beforeLabel: 'Phthisis Bulbi / Shrunken Cornea',
-    afterLabel: 'Bio-Compatible Custom Scleral Shell',
-    afterImage: eye3,
-    beforeImage: eye2,
+    beforeLabel: 'Pre-Prosthetic Socket Condition',
+    afterLabel: 'Hand-Crafted 3D Eye Artificial Eye',
+    afterImage: eye2,
+    beforeImage: eye4,
     rating: 5,
     patient: 'Priya S. (Lucknow)',
   },
   {
     id: 3,
-    title: 'Orbital & Facial Prosthetics',
-    condition: 'Maxillofacial Reconstruction',
-    category: 'Process',
-    beforeLabel: 'Post-Surgical Orbital Defect',
-    afterLabel: 'Color-Matched Silicone Facial Eye',
+    title: 'Anatomical Symmetry & Motility',
+    condition: 'Congenital Anophthalmia Restoration',
+    category: 'Before & After',
+    beforeLabel: 'Unmatched Socket Asymmetry',
+    afterLabel: 'Hand-Crafted 3D Eye Artificial Eye',
     afterImage: eye2,
     beforeImage: eye4,
     rating: 5,
@@ -86,7 +86,7 @@ const BeforeAfterGallery = () => {
         <SectionTitle
           subtitle="Clinical Outcomes"
           title="Before & After Transformation Gallery"
-          description="See the natural eye symmetry, realistic iris color-matching, and restored patient confidence achieved with Dr. Shashank Mishra's custom prostheses."
+          description="See the natural eye symmetry, realistic iris color-matching, and restored patient confidence achieved with Mr. Shashank Mishra's custom prostheses."
           centered={true}
         />
 

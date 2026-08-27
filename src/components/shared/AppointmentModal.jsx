@@ -65,7 +65,7 @@ const AppointmentModal = () => {
               <Box
                 component="img"
                 src={drShashankImg}
-                alt="Dr. Shashank Mishra"
+                alt="Mr. Shashank Mishra"
                 sx={{
                   width: 72,
                   height: 72,
@@ -227,7 +227,7 @@ const AppointmentModal = () => {
               Appointment Requested!
             </Typography>
             <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.8)', maxWidth: 500, mx: 'auto', mb: 4 }}>
-              Thank you, <strong>{formData.name}</strong>. Our medical coordinator will reach out to you at <strong>{formData.mobile}</strong> shortly to confirm your schedule with Dr. Shashank Mishra.
+              Thank you, <strong>{formData.name}</strong>. Our medical coordinator will reach out to you at <strong>{formData.mobile}</strong> shortly to confirm your schedule with Mr. Shashank Mishra.
             </Typography>
             <Button
               variant="outlined"

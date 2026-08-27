@@ -7,6 +7,7 @@ import MakingOfEyeSection from '../components/home/MakingOfEyeSection';
 import TreatmentTimeline from '../components/home/TreatmentTimeline';
 import DoctorSection from '../components/home/DoctorSection';
 import BeforeAfterGallery from '../components/home/BeforeAfterGallery';
+import ClinicalGalleryGrid from '../components/shared/ClinicalGalleryGrid';
 import PatientStoriesSection from '../components/home/PatientStoriesSection';
 import KnowledgeSection from '../components/home/KnowledgeSection';
 import FAQSection from '../components/home/FAQSection';
@@ -24,6 +25,7 @@ const Home = () => {
       <MakingOfEyeSection />
       <TreatmentTimeline />
       <DoctorSection />
+      <ClinicalGalleryGrid showHeader={true} limit={6} />
       <BeforeAfterGallery />
       <PatientStoriesSection />
       <KnowledgeSection />

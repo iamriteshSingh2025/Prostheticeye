@@ -198,7 +198,7 @@ const AppointmentSection = () => {
                 Appointment Booking Received!
               </Typography>
               <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.8)', maxWidth: 500, mx: 'auto', mb: 4 }}>
-                Our team will contact you shortly to confirm your consultation schedule with Dr. Shashank Mishra.
+                Our team will contact you shortly to confirm your consultation schedule with Mr. Shashank Mishra.
               </Typography>
               <Button
                 variant="outlined"

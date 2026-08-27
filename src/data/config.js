@@ -2,7 +2,7 @@
 export const SITE_CONFIG = {
   name: 'UB Eye Care',
   tagline: 'Restoring Confidence. Restoring Lives.',
-  doctor: 'Dr. Shashank Mishra',
+  doctor: 'Mr. Shashank Mishra',
   phone: '+91 9984256256',
   whatsapp: '+91 9984256256',
   email: 'info@ubeyecare.com',

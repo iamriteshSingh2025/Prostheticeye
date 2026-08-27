@@ -51,7 +51,7 @@ const PrivacyPage = () => {
             3. Contact Us
           </Typography>
           <Typography variant="body2" sx={{ color: isDark ? 'rgba(255,255,255,0.7)' : 'text.secondary', lineHeight: 1.7 }}>
-            If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact Dr. Shashank Mishra or the UB Eye Care administrative team.
+            If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact Mr. Shashank Mishra or the UB Eye Care administrative team.
           </Typography>
         </Paper>
       </Container>

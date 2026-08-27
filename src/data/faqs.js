@@ -37,12 +37,12 @@ export const FAQS = [
   {
     id: 8,
     question: 'Can I sleep with my Artificial Eye in?',
-    answer: 'In most cases, it is recommended to remove your artificial eye at night to allow the socket to rest and breathe. However, some patients, especially initially, may be advised to keep it in. Your doctor at UB Eye Care will give you specific guidance based on your individual situation. Some modern prostheses are designed for extended wear. Always follow the specific advice given by Dr. Shashank Mishra during your consultation.',
+    answer: 'In most cases, it is recommended to remove your artificial eye at night to allow the socket to rest and breathe. However, some patients, especially initially, may be advised to keep it in. Your doctor at UB Eye Care will give you specific guidance based on your individual situation. Some modern prostheses are designed for extended wear. Always follow the specific advice given by Mr. Shashank Mishra during your consultation.',
   },
   {
     id: 9,
     question: 'Will my Artificial Eye look natural?',
-    answer: 'Yes! At UB Eye Care, we pride ourselves on creating artificial eyes that are virtually indistinguishable from natural eyes. Dr. Shashank Mishra uses advanced colour-matching techniques and highly detailed hand-painting to replicate the exact iris pattern, color, and the subtle blood vessel patterns of your natural eye. Our patients regularly report that friends, family, and colleagues cannot tell the difference. Patient satisfaction is our highest priority.',
+    answer: 'Yes! At UB Eye Care, we pride ourselves on creating artificial eyes that are virtually indistinguishable from natural eyes. Mr. Shashank Mishra uses advanced colour-matching techniques and highly detailed hand-painting to replicate the exact iris pattern, color, and the subtle blood vessel patterns of your natural eye. Our patients regularly report that friends, family, and colleagues cannot tell the difference. Patient satisfaction is our highest priority.',
   },
   {
     id: 10,

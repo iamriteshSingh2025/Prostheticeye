@@ -30,7 +30,7 @@ const AboutPage = () => {
               mt: 1,
             }}
           >
-            About Dr. Shashank Mishra & UB Eye Care
+            About Mr. Shashank Mishra & UB Eye Care
           </Typography>
         </Box>
 

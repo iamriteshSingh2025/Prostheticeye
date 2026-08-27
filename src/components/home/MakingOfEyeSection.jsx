@@ -24,7 +24,7 @@ const STAGES = [
     color: '#2563EB',
     image: eye4Img,
     imageAlt: 'Doctor taking eye socket impression for patient',
-    description: 'Dr. Mishra takes a gentle, bio-compatible hydrocolloid impression of your eye socket. This captures the exact contours, volume, and conjunctival folds to guarantee maximum comfort and natural movement.',
+    description: 'Mr. Mishra takes a gentle, bio-compatible hydrocolloid impression of your eye socket. This captures the exact contours, volume, and conjunctival folds to guarantee maximum comfort and natural movement.',
     bullets: [
       'Painless 10-minute molding procedure',
       'Captures exact socket depth & muscle attachment points',
@@ -69,7 +69,7 @@ const STAGES = [
     color: '#7C3AED',
     image: eye1Img,
     imageAlt: 'Final polished artificial eye closeup',
-    description: 'The prosthesis undergoes diamond-grit optical polishing to create a tear-wettable surface. Dr. Mishra performs the final fitting, verifying eye symmetry, eyelid closure, and motility.',
+    description: 'The prosthesis undergoes diamond-grit optical polishing to create a tear-wettable surface. Mr. Mishra performs the final fitting, verifying eye symmetry, eyelid closure, and motility.',
     bullets: [
       'Optical-grade optical polish for natural tear sheen',
       'Seamless anatomical insertion and comfortable wear',
@@ -253,7 +253,7 @@ const MakingOfEyeSection = () => {
                         sx={{ background: current.color, color: '#fff', fontWeight: 700, mb: 1, fontSize: '0.72rem' }}
                       />
                       <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.85)', fontWeight: 500, lineHeight: 1.5, fontSize: { xs: '0.75rem', sm: '0.82rem' } }}>
-                        Every phase is personally executed by Senior Specialist Dr. Shashank Mishra to ensure maximum comfort, lifelike iris depth, and precise symmetry.
+                        Every phase is personally executed by Senior Specialist Mr. Shashank Mishra to ensure maximum comfort, lifelike iris depth, and precise symmetry.
                       </Typography>
                     </Box>
                   </Box>

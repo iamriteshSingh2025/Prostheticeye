@@ -37,7 +37,7 @@ const TermsPage = () => {
             1. Medical Disclaimer
           </Typography>
           <Typography variant="body2" sx={{ color: isDark ? 'rgba(255,255,255,0.7)' : 'text.secondary', lineHeight: 1.7, mb: 3 }}>
-            Information provided on this website is intended for educational purposes and general guidance regarding ocular prosthetics. It does not substitute for direct, in-person clinical examination and medical evaluation by Dr. Shashank Mishra.
+            Information provided on this website is intended for educational purposes and general guidance regarding ocular prosthetics. It does not substitute for direct, in-person clinical examination and medical evaluation by Mr. Shashank Mishra.
           </Typography>
 
           <Typography variant="h6" sx={{ fontWeight: 700, mt: 3, mb: 1, color: isDark ? '#fff' : '#0A2540' }}>

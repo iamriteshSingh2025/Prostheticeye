@@ -14,6 +14,7 @@ import { useAppointment } from '../../context/AppointmentContext';
 import heroImg from '../../assets/hero.png';
 import eye1Img from '../../assets/eye1.png';
 import drShashankImg from '../../assets/Shashank photo.jpeg';
+import HeroSlider from './HeroSlider';
 
 const HeroSection = () => {
   const { openAppointment } = useAppointment();
@@ -167,7 +168,7 @@ const HeroSection = () => {
                   fontFamily: "'Poppins', sans-serif",
                 }}
               >
-                Restore your confidence with custom hand-crafted artificial eyes designed for 100% natural appearance, anatomical comfort, and bio-compatible precision by <strong>Dr. Shashank Mishra</strong>.
+                Restore your confidence with custom hand-crafted artificial eyes designed for 100% natural appearance, anatomical comfort, and bio-compatible precision by <strong>Mr. Shashank Mishra</strong>.
               </Typography>
 
               {/* Action Buttons */}
@@ -257,7 +258,7 @@ const HeroSection = () => {
               <Grid container spacing={2}>
                 {[
                   { label: '5000+ Happy Patients', icon: ShieldIcon },
-                  { label: '3D Iris Crypt Matching', icon: AutoAwesomeIcon },
+                  { label: '3D Eye Crypt Matching', icon: AutoAwesomeIcon },
                   { label: 'Bio-Compatible Acrylic', icon: VerifiedUserIcon },
                 ].map((item, i) => (
                   <Grid size={{ xs: 12, sm: 4 }} key={i}>
@@ -273,7 +274,7 @@ const HeroSection = () => {
             </Box>
           </Grid>
 
-          {/* Right Column - Real Eye Images Showcase */}
+          {/* Right Column - Professional Slider Showcase */}
           <Grid size={{ xs: 12, md: 5 }}>
             <Box
               component={motion.div}
@@ -281,161 +282,48 @@ const HeroSection = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <GlassCard
-                dark={true}
-                hover={false}
+              {/* Professional WhatsApp Image Slider */}
+              <HeroSlider />
+
+              {/* Doctor Card Footer */}
+              <Box
                 sx={{
-                  p: { xs: 2.5, sm: 3 },
-                  boxShadow: '0 25px 80px rgba(0,0,0,0.6)',
-                  border: '1px solid rgba(255, 255, 255, 0.18)',
-                  position: 'relative',
-                  overflow: 'hidden',
+                  mt: 2,
+                  p: 2,
+                  borderRadius: 4,
+                  background: 'rgba(10, 37, 64, 0.65)',
+                  backdropFilter: 'blur(12px)',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 2,
                 }}
               >
-                {/* Hero Image - Premium Artificial Eye */}
                 <Box
+                  component="img"
+                  src={drShashankImg}
+                  alt="Mr. Shashank Mishra"
                   sx={{
-                    width: '100%',
-                    height: { xs: 220, sm: 260 },
-                    borderRadius: 4,
-                    overflow: 'hidden',
-                    mb: 2,
-                    position: 'relative',
-                    boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
-                    border: '1px solid rgba(255,255,255,0.12)',
+                    width: 48,
+                    height: 48,
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    objectPosition: 'center top',
+                    border: '2px solid #10B981',
+                    boxShadow: '0 4px 12px rgba(16,185,129,0.3)',
+                    flexShrink: 0,
                   }}
-                >
-                  <Box
-                    component="img"
-                    src={heroImg}
-                    alt="Custom Artificial Eye - UB Eye Care"
-                    sx={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      display: 'block',
-                    }}
-                  />
-                  {/* Overlay label */}
-                  <Box
-                    sx={{
-                      position: 'absolute',
-                      bottom: 12,
-                      left: 12,
-                      px: 2,
-                      py: 0.6,
-                      borderRadius: '30px',
-                      background: 'rgba(16,185,129,0.85)',
-                      backdropFilter: 'blur(8px)',
-                    }}
-                  >
-                    <Typography variant="caption" sx={{ color: '#fff', fontWeight: 700, letterSpacing: 0.8 }}>
-                      ✦ Custom Crafted Prosthetic Eye
-                    </Typography>
-                  </Box>
+                />
+                <Box sx={{ flexGrow: 1 }}>
+                  <Typography variant="subtitle2" sx={{ color: '#fff', fontWeight: 700, fontSize: '0.88rem', lineHeight: 1.2 }}>
+                    Mr. Shashank Mishra
+                  </Typography>
+                  <Typography variant="caption" sx={{ color: '#10B981', fontWeight: 600, fontSize: '0.72rem', display: 'block' }}>
+                    Consultant Optometrist & Ocularist • M.Optom, FSCEH (Delhi)
+                  </Typography>
                 </Box>
-
-                {/* Thumbnail Row */}
-                <Grid container spacing={1.5} sx={{ mb: 2.5 }}>
-                  <Grid size={{ xs: 6 }}>
-                    <Box
-                      sx={{
-                        borderRadius: 3,
-                        overflow: 'hidden',
-                        height: 100,
-                        position: 'relative',
-                        border: '1px solid rgba(255,255,255,0.1)',
-                      }}
-                    >
-                      <Box
-                        component="img"
-                        src={eye1Img}
-                        alt="Artificial Eye Closeup"
-                        sx={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                      />
-                      <Box
-                        sx={{
-                          position: 'absolute',
-                          inset: 0,
-                          background: 'linear-gradient(to top, rgba(10,37,64,0.7) 0%, transparent 50%)',
-                        }}
-                      />
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          position: 'absolute',
-                          bottom: 6,
-                          left: 8,
-                          color: '#fff',
-                          fontWeight: 600,
-                          fontSize: '0.68rem',
-                        }}
-                      >
-                        Iris Detail
-                      </Typography>
-                    </Box>
-                  </Grid>
-                  <Grid size={{ xs: 6 }}>
-                    <Box
-                      sx={{
-                        borderRadius: 3,
-                        background: 'linear-gradient(135deg, #0A2540, #1a3a5c)',
-                        height: 100,
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '1px solid rgba(255,255,255,0.1)',
-                        p: 1.5,
-                      }}
-                    >
-                      <Typography variant="h4" sx={{ fontWeight: 900, color: '#10B981', fontFamily: "'Playfair Display', serif", lineHeight: 1 }}>
-                        5000+
-                      </Typography>
-                      <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.75)', textAlign: 'center', mt: 0.5, fontSize: '0.7rem', fontWeight: 500 }}>
-                        Successful Eye Restorations
-                      </Typography>
-                    </Box>
-                  </Grid>
-                </Grid>
-
-                {/* Rating */}
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1.5 }}>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Rating value={5} readOnly precision={0.5} icon={<StarIcon sx={{ color: '#F59E0B', fontSize: 18 }} />} emptyIcon={<StarIcon sx={{ fontSize: 18 }} />} />
-                    <Typography variant="subtitle2" sx={{ color: '#fff', fontWeight: 700, fontSize: '0.85rem' }}>
-                      5.0 Star Rated
-                    </Typography>
-                  </Box>
-                  <Chip label="Verified Clinic" size="small" sx={{ background: '#10B981', color: '#fff', fontWeight: 700, fontSize: '0.7rem' }} />
-                </Box>
-
-                <Box sx={{ pt: 1.5, borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', gap: 1.5 }}>
-                  <Box
-                    component="img"
-                    src={drShashankImg}
-                    alt="Dr. Shashank Mishra"
-                    sx={{
-                      width: 44,
-                      height: 44,
-                      borderRadius: '50%',
-                      objectFit: 'cover',
-                      objectPosition: 'center top',
-                      border: '2px solid #10B981',
-                      boxShadow: '0 4px 12px rgba(16,185,129,0.3)',
-                      flexShrink: 0,
-                    }}
-                  />
-                  <Box>
-                    <Typography variant="subtitle2" sx={{ color: '#fff', fontWeight: 700, fontSize: '0.85rem', lineHeight: 1.2 }}>
-                      Mr. Shashank Mishra
-                    </Typography>
-                    <Typography variant="caption" sx={{ color: '#10B981', fontWeight: 600, fontSize: '0.72rem' }}>
-                      Consultant Optometrist & Ocularist • M.Optom, FSCEH (Delhi)
-                    </Typography>
-                  </Box>
-                </Box>
-              </GlassCard>
+                <Chip label="5.0 ★ Rating" size="small" sx={{ background: '#F59E0B', color: '#000', fontWeight: 800, fontSize: '0.7rem' }} />
+              </Box>
             </Box>
           </Grid>
         </Grid>

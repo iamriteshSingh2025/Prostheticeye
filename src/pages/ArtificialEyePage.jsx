@@ -34,7 +34,7 @@ const ArtificialEyePage = () => {
               Custom Hand-Crafted Artificial Eyes
             </Typography>
             <Typography variant="body1" sx={{ color: isDark ? 'rgba(255,255,255,0.8)' : 'text.secondary', lineHeight: 1.8, fontSize: '1.05rem', mb: 4 }}>
-              At UB Eye Care, custom artificial eyes (ocular prostheses) are hand-crafted by Dr. Shashank Mishra using medical-grade acrylic and detailed hand-painting technique. Each prosthesis is custom-molded to fit your eye socket perfectly, matching iris color, pupil size, and blood vessel patterns.
+              At UB Eye Care, custom artificial eyes (ocular prostheses) are hand-crafted by Mr. Shashank Mishra using medical-grade acrylic and detailed hand-painting technique. Each prosthesis is custom-molded to fit your eye socket perfectly, matching iris color, pupil size, and blood vessel patterns.
             </Typography>
 
             <Stack spacing={2} sx={{ mb: 4 }}>
@@ -78,7 +78,7 @@ const ArtificialEyePage = () => {
                 100% Customized Fit
               </Typography>
               <Typography variant="body2" sx={{ color: isDark ? 'rgba(255,255,255,0.7)' : 'text.secondary', lineHeight: 1.7 }}>
-                Unlike mass-manufactured stock eyes, every prosthesis made by Dr. Mishra is 100% unique to the patient's socket and opposite natural eye.
+                Unlike mass-manufactured stock eyes, every prosthesis made by Mr. Mishra is 100% unique to the patient's socket and opposite natural eye.
               </Typography>
             </GlassCard>
           </Grid>

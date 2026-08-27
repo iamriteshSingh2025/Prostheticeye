@@ -41,7 +41,7 @@ const IrisTechnologySection = () => {
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 2 }}>
         <SectionTitle
           subtitle="Advanced Clinical Innovation"
-          title="3D Iris Crypts & Bio-Pigment Technology"
+          title="3D Eye Crypts & Bio-Pigment Technology"
           description="We recreate true 3D depth, natural iris crypts, pupil light dynamics, and fine ocular vascularization to craft artificial eyes that are virtually indistinguishable from natural eyes."
           centered={true}
         />
@@ -69,10 +69,10 @@ const IrisTechnologySection = () => {
                   </Box>
                   <Box>
                     <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.5, color: isDark ? '#fff' : '#0A2540' }}>
-                      Layered 3D Iris Depth Fabrication
+                      Layered 3D Eye Depth Fabrication
                     </Typography>
                     <Typography variant="body2" sx={{ color: isDark ? 'rgba(255,255,255,0.7)' : 'text.secondary', lineHeight: 1.6 }}>
-                      Unlike flat painted stock eyes, Dr. Mishra builds the iris using multi-layered clear resin depth mapping, replicating natural light refraction and true pupil depth.
+                      Unlike flat painted stock eyes, Mr. Mishra builds the iris using multi-layered clear resin depth mapping, replicating natural light refraction and true pupil depth.
                     </Typography>
                   </Box>
                 </Box>

@@ -298,7 +298,8 @@ const Navbar = () => {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              gap: { xs: .3, sm: .7, md: .8 },
+              gap: { xs: 1, sm: 1.2, md: 1.5 },
+              ml: 'auto',
               flexShrink: 0
             }}
           >

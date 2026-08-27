@@ -24,7 +24,7 @@ const KnowledgeSection = () => {
         <SectionTitle
           subtitle="Knowledge & Articles"
           title="Artificial Eye Care & Cleaning Guides"
-          description="Explore our patient guides, cleaning tips, and expert ocular prosthetics advice curated by Dr. Shashank Mishra."
+          description="Explore our patient guides, cleaning tips, and expert ocular prosthetics advice curated by Mr. Shashank Mishra."
           centered={true}
         />
 

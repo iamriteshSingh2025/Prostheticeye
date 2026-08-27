@@ -52,12 +52,12 @@ const DoctorSection = () => {
                   boxShadow: '0 20px 60px rgba(10, 37, 64, 0.3)',
                 }}
               >
-                {/* Top full-width image - Dr. Shashank Mishra */}
+                {/* Top full-width image - Mr. Shashank Mishra */}
                 <Box sx={{ width: '100%', height: { xs: 280, sm: 340 }, overflow: 'hidden', borderRadius: '16px 16px 0 0', position: 'relative' }}>
                   <Box
                     component="img"
                     src={drShashankImg}
-                    alt="Dr. Shashank Mishra - Senior Ocularist & Prosthetist"
+                    alt="Mr. Shashank Mishra - Senior Ocularist & Prosthetist"
                     sx={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                   />
                   <Box

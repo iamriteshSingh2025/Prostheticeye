@@ -27,13 +27,13 @@ export const DOCTOR = {
     { year: '2020', title: 'Telemedicine Launch', description: 'Launched telemedicine consultations to reach patients across India during the pandemic.' },
     { year: '2024', title: '5000+ Patients', description: 'Achieved the milestone of 5000+ satisfied patients with a 98% satisfaction rate.' },
   ],
-  about: `Dr. Shashank Mishra is one of India's most experienced and skilled ocular prosthetics specialists, with over 15 years of dedicated practice in artificial eye fabrication and ocular prosthetics. 
+  about: `Mr. Shashank Mishra is one of India's most experienced and skilled ocular prosthetics specialists, with over 15 years of dedicated practice in artificial eye fabrication and ocular prosthetics. 
 
-Based at UB Eye Care in Uttar Pradesh, Dr. Mishra has transformed the lives of over 5000 patients by providing them with custom-made artificial eyes that look and feel completely natural.
+Based at UB Eye Care in Uttar Pradesh, Mr. Mishra has transformed the lives of over 5000 patients by providing them with custom-made artificial eyes that look and feel completely natural.
 
 His journey began with a deep commitment to helping patients who had suffered the loss of an eye – whether due to trauma, disease, or cancer – to reclaim their appearance, confidence, and quality of life. He combines technical mastery with genuine compassion, treating every patient with the care and attention they deserve.
 
-Dr. Mishra is known for his extraordinary attention to detail in color-matching and iris painting, creating artificial eyes that are virtually indistinguishable from the natural eye. His patients often report that friends and family cannot tell the difference.
+Mr. Mishra is known for his extraordinary attention to detail in color-matching and iris painting, creating artificial eyes that are virtually indistinguishable from the natural eye. His patients often report that friends and family cannot tell the difference.
 
 He believes that every patient deserves world-class care regardless of their background, and strives to make advanced prosthetic services accessible and affordable to all.`,
 };
@@ -74,7 +74,7 @@ export const TREATMENT_STEPS = [
   {
     step: 2,
     title: 'Initial Consultation',
-    description: 'Meet Dr. Shashank Mishra for a thorough discussion of your condition, needs, and treatment options.',
+    description: 'Meet Mr. Shashank Mishra for a thorough discussion of your condition, needs, and treatment options.',
     icon: 'chat',
     duration: '30–45 minutes',
     color: '#7C3AED',
@@ -106,7 +106,7 @@ export const TREATMENT_STEPS = [
   {
     step: 6,
     title: 'Custom Eye Fabrication',
-    description: 'Your artificial eye is hand-crafted by Dr. Mishra using premium medical-grade materials.',
+    description: 'Your artificial eye is hand-crafted by Mr. Mishra using premium medical-grade materials.',
     icon: 'build',
     duration: '3–5 days',
     color: '#F59E0B',
@@ -182,7 +182,7 @@ export const WHY_CHOOSE_US = [
   {
     id: 8,
     title: 'Personal Attention',
-    description: 'Dr. Mishra personally handles every case with individual care and attention.',
+    description: 'Mr. Mishra personally handles every case with individual care and attention.',
     icon: 'person_pin',
     color: '#EC4899',
   },
