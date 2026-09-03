@@ -12,6 +12,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { SITE_CONFIG } from '../../data/config';
 import { SERVICES } from '../../data/services';
+import logoImg from '../../assets/logo.jpeg';
 
 const Footer = () => {
   return (
@@ -45,46 +46,27 @@ const Footer = () => {
         <Grid container spacing={5}>
           {/* Brand Info */}
           <Grid size={{ xs: 12, md: 4 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mb: 2 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', mb: 2.5 }}>
               <Box
-                sx={{
-                  width: 48,
-                  height: 48,
-                  borderRadius: '12px',
-                  background: 'linear-gradient(135deg, #2563EB, #10B981)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 4px 20px rgba(37, 99, 235, 0.4)',
-                }}
+                component={Link}
+                to="/"
+                sx={{ display: 'inline-flex' }}
               >
-                <RemoveRedEyeIcon sx={{ color: '#fff', fontSize: 26 }} />
-              </Box>
-              <Box>
-                <Typography
-                  variant="h6"
+                <Box
+                  component="img"
+                  src={logoImg}
+                  alt="UB Eye Care Logo"
                   sx={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontWeight: 800,
-                    fontSize: '1.4rem',
-                    color: '#fff',
-                    lineHeight: 1,
+                    width: { xs: 58, sm: 66 },
+                    height: { xs: 58, sm: 66 },
+                    borderRadius: '14px',
+                    objectFit: 'cover',
+                    border: '1.5px solid rgba(16,185,129,0.4)',
+                    boxShadow: '0 4px 20px rgba(37, 99, 235, 0.4)',
+                    transition: 'transform 0.3s ease',
+                    '&:hover': { transform: 'scale(1.05)' }
                   }}
-                >
-                  {SITE_CONFIG.name}
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: '0.65rem',
-                    color: '#10B981',
-                    letterSpacing: 1.8,
-                    textTransform: 'uppercase',
-                    fontWeight: 600,
-                    mt: 0.5,
-                  }}
-                >
-                  Ocular Prosthesis Centre
-                </Typography>
+                />
               </Box>
             </Box>
 
@@ -333,7 +315,21 @@ const Footer = () => {
                   <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.5)', display: 'block' }}>
                     Centre Address
                   </Typography>
-                  <Typography sx={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.88rem' }}>
+                  <Typography
+                    component="a"
+                    href={SITE_CONFIG.mapsLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{
+                      color: 'rgba(255,255,255,0.85)',
+                      textDecoration: 'none',
+                      fontSize: '0.88rem',
+                      lineHeight: 1.5,
+                      display: 'inline-block',
+                      transition: 'color 0.2s ease',
+                      '&:hover': { color: '#10B981', textDecoration: 'underline' }
+                    }}
+                  >
                     {SITE_CONFIG.address}
                   </Typography>
                 </Box>

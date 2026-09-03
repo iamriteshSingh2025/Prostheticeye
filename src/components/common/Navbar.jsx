@@ -19,6 +19,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useThemeMode } from '../../context/ThemeContext';
 import { useAppointment } from '../../context/AppointmentContext';
 import { SITE_CONFIG } from '../../data/config';
+import logoImg from '../../assets/logo.jpeg';
 
 const NAV_ITEMS = [
   { label: 'Home', path: '/' },
@@ -126,59 +127,26 @@ const Navbar = () => {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              gap: { xs: 1, sm: 1.2, md: 1.5 },
               textDecoration: 'none',
               flexShrink: 0,
-              mr: { lg: 1, xl: 2 }
+              mr: { xs: 1, sm: 2, lg: 2, xl: 3 }
             }}
           >
             <Box
+              component="img"
+              src={logoImg}
+              alt="UB Eye Care Logo"
               sx={{
-                width: { xs: 38, sm: 42, md: 46 },
-                height: { xs: 38, sm: 42, md: 46 },
+                width: { xs: 44, sm: 48, md: 54 },
+                height: { xs: 44, sm: 48, md: 54 },
                 borderRadius: { xs: '10px', sm: '12px', md: '14px' },
-                background: 'linear-gradient(135deg,#2563EB,#10B981)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                objectFit: 'cover',
+                border: '1.5px solid rgba(16,185,129,0.4)',
                 boxShadow: '0 4px 20px rgba(37,99,235,.4)',
-                '&:hover': { transform: 'scale(1.05) rotate(5deg)' },
+                '&:hover': { transform: 'scale(1.06)' },
                 transition: 'transform .3s ease'
               }}
-            >
-              <RemoveRedEyeIcon
-                sx={{ color: '#fff', fontSize: { xs: 21, sm: 23, md: 26 } }}
-              />
-            </Box>
-
-            <Box>
-              <Typography
-                sx={{
-                  fontFamily: "'Playfair Display',serif",
-                  fontWeight: 800,
-                  fontSize: { xs: '1rem', sm: '1.1rem', md: '1.2rem', lg: '1.25rem', xl: '1.35rem' },
-                  color: scrolled && !isDark ? '#0A2540' : '#fff',
-                  lineHeight: 1,
-                  letterSpacing: '-.3px',
-                  whiteSpace: 'nowrap'
-                }}
-              >
-                UB Eye Care
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: { xs: '.5rem', sm: '.55rem', md: '.6rem' },
-                  color: '#10B981',
-                  letterSpacing: { xs: 1, sm: 1.2, md: 1.5 },
-                  textTransform: 'uppercase',
-                  fontWeight: 700,
-                  mt: .4,
-                  whiteSpace: 'nowrap'
-                }}
-              >
-                Artificial Eye Centre
-              </Typography>
-            </Box>
+            />
           </Box>
 
           {/* Desktop Navigation */}
@@ -412,42 +380,25 @@ const Navbar = () => {
             background: 'linear-gradient(135deg,#0A2540,#2563EB)'
           }}
         >
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+          <Box
+            component={Link}
+            to="/"
+            onClick={closeDrawer}
+            sx={{ display: 'flex', alignItems: 'center' }}
+          >
             <Box
+              component="img"
+              src={logoImg}
+              alt="UB Eye Care Logo"
               sx={{
-                width: 44,
-                height: 44,
-                borderRadius: 2,
-                background: 'linear-gradient(135deg,#2563EB,#10B981)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
+                width: 48,
+                height: 48,
+                borderRadius: '12px',
+                objectFit: 'cover',
+                border: '1.5px solid rgba(16,185,129,0.4)',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
               }}
-            >
-              <RemoveRedEyeIcon sx={{ color: '#fff', fontSize: 26 }} />
-            </Box>
-
-            <Box>
-              <Typography
-                sx={{
-                  color: '#fff',
-                  fontWeight: 800,
-                  fontFamily: "'Playfair Display',serif",
-                  fontSize: '1.1rem'
-                }}
-              >
-                UB Eye Care
-              </Typography>
-              <Typography
-                sx={{
-                  color: 'rgba(255,255,255,.7)',
-                  fontSize: '.6rem',
-                  letterSpacing: 1.5
-                }}
-              >
-                ARTIFICIAL EYE CENTRE
-              </Typography>
-            </Box>
+            />
           </Box>
 
           <IconButton onClick={closeDrawer} sx={{ color: '#fff' }}>

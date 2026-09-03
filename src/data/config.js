@@ -6,8 +6,9 @@ export const SITE_CONFIG = {
   phone: '+91 9984256256',
   whatsapp: '+91 9984256256',
   email: 'info@ubeyecare.com',
-  address: 'Artificial Eye & Ocular Prosthesis Centre, Uttar Pradesh, India',
-  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14236.154019748476!2d82.98506!3d25.32110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2df1aa0c8c35%3A0x2b1a3f7b0d1b3e65!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin',
+  address: 'Near Harsewanand Public School, Gayatri Nagar Colony, Maruti Nagar Colony, Salhupur, Varanasi, Uttar Pradesh 221011',
+  mapUrl: 'https://maps.google.com/maps?q=U.B.Eye+Care+(An+Optometry+Clinic),+near+Harsewanada+Public+School,+Gayatri+Nagar+Colony,+Maruti+Nagar+Colony,+Varanasi,+Salhupur,+Uttar+Pradesh+221011&t=&z=15&ie=UTF8&iwloc=&output=embed',
+  mapsLink: 'https://maps.app.goo.gl/AuM4Jisa4SFs6Jek9',
   workingHours: 'Monday – Saturday: 9 AM – 7 PM',
   social: {
     facebook: '#',

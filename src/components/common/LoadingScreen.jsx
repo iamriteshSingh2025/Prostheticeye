@@ -1,7 +1,7 @@
 import { Box, Typography, CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { SITE_CONFIG } from '../../data/config';
+import logoImg from '../../assets/logo.jpeg';
 
 const LoadingScreen = () => {
   return (
@@ -26,22 +26,20 @@ const LoadingScreen = () => {
       }}
     >
       <Box
-        component={motion.div}
-        animate={{ scale: [1, 1.15, 1] }}
-        transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
+        component={motion.img}
+        src={logoImg}
+        alt="UB Eye Care"
+        animate={{ scale: [1, 1.1, 1], rotate: [0, 2, -2, 0] }}
+        transition={{ repeat: Infinity, duration: 2.5, ease: 'easeInOut' }}
         sx={{
-          width: 80,
-          height: 80,
+          width: 90,
+          height: 90,
           borderRadius: '24px',
-          background: 'linear-gradient(135deg, #2563EB, #10B981)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+          objectFit: 'cover',
+          border: '2px solid rgba(16,185,129,0.5)',
           boxShadow: '0 0 50px rgba(37, 99, 235, 0.6)',
         }}
-      >
-        <RemoveRedEyeIcon sx={{ color: '#fff', fontSize: 44 }} />
-      </Box>
+      />
 
       <Box sx={{ textAlign: 'center' }}>
         <Typography
