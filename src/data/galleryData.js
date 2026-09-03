@@ -28,7 +28,7 @@ export const HERO_SLIDER_IMAGES = [
   {
     id: 2,
     image: heroSlider2,
-    title: "Advanced Iris & Crypt Matching",
+    title: "Advanced Iris & Matching",
     subtitle: "Natural Aesthetic Restoration",
     badge: "100% Custom Fit",
     description: "Hand-painted iris detailing tailored meticulously to match your natural eye color."

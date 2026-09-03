@@ -7,58 +7,34 @@ import GlassCard from '../shared/GlassCard';
 import { useThemeMode } from '../../context/ThemeContext';
 import { useAppointment } from '../../context/AppointmentContext';
 
-// Real AI-generated images
-import eye1 from '../../assets/eye1.png'; // artificial eye closeup
-import eye2 from '../../assets/eye2.png'; // doctor crafting eye
-import eye3 from '../../assets/eye3.png'; // multiple prosthetic eyes
-import eye4 from '../../assets/eye4.png'; // patient fitting
+// Real Patient Before & After Photos
+import patient1Before from '../../assets/patient1-before.jpg';
+import patient1After from '../../assets/patient1-after.jpg';
+import patient2Before from '../../assets/patient2-before.jpg';
+import patient2After from '../../assets/patient2-after.jpg';
 
 const TRANSFORMATIONS = [
   {
     id: 1,
-    title: 'Custom Ocular Prosthesis Fit',
-    condition: 'Post-Traumatic Eye Loss Restoration',
-    category: 'Before & After',
-    beforeLabel: 'Microphthalmos / Loss of Natural Eye',
-    afterLabel: 'Hand-Crafted 3D Eye Artificial Eye',
-    afterImage: eye1,
-    beforeImage: eye4,
-    rating: 5,
-    patient: 'Rajesh K. (Varanasi)',
-  },
-  {
-    id: 2,
-    title: 'Precision Color & Iris Matching',
-    condition: 'Anophthalmic Socket Fitting',
-    category: 'Before & After',
-    beforeLabel: 'Pre-Prosthetic Socket Condition',
-    afterLabel: 'Hand-Crafted 3D Eye Artificial Eye',
-    afterImage: eye2,
-    beforeImage: eye4,
-    rating: 5,
-    patient: 'Priya S. (Lucknow)',
-  },
-  {
-    id: 3,
     title: 'Anatomical Symmetry & Motility',
     condition: 'Congenital Anophthalmia Restoration',
     category: 'Before & After',
-    beforeLabel: 'Unmatched Socket Asymmetry',
+    beforeLabel: 'Pre-Prosthetic Socket Condition',
     afterLabel: 'Hand-Crafted 3D Eye Artificial Eye',
-    afterImage: eye2,
-    beforeImage: eye4,
+    afterImage: patient1After,
+    beforeImage: patient1Before,
     rating: 5,
     patient: 'Amit V. (Kanpur)',
   },
   {
-    id: 4,
+    id: 2,
     title: 'Pediatric Conformer & Prosthesis',
     condition: 'Congenital Anophthalmia socket Expansion',
-    category: 'Process',
-    beforeLabel: 'Small Eye Socket / Congenital Defect',
+    category: 'Before & After',
+    beforeLabel: 'Pre-Treatment Socket Condition',
     afterLabel: 'Gradual Expansion & Custom Eye Fit',
-    afterImage: eye4,
-    beforeImage: eye3,
+    afterImage: patient2After,
+    beforeImage: patient2Before,
     rating: 5,
     patient: 'Child Patient (Agra)',
   },
@@ -102,7 +78,7 @@ const BeforeAfterGallery = () => {
                   <Box
                     sx={{
                       width: '100%',
-                      height: { xs: 190, sm: 240 },
+                      height: { xs: 260, sm: 320, md: 350 },
                       borderRadius: 4,
                       overflow: 'hidden',
                       mb: 3,
@@ -118,6 +94,7 @@ const BeforeAfterGallery = () => {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
+                        objectPosition: 'center 20%',
                         display: 'block',
                         transition: 'opacity 0.4s ease',
                       }}

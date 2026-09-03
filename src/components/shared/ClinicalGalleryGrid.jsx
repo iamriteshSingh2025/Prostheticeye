@@ -477,3 +477,4 @@ const ClinicalGalleryGrid = ({ showHeader = true, limit = null }) => {
 };
 
 export default ClinicalGalleryGrid;
+ 
