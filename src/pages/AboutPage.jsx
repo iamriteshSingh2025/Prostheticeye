@@ -64,7 +64,7 @@ const AboutPage = () => {
         {/* Achievements Milestone Timeline */}
         <SectionTitle
           subtitle="Milestones & Journey"
-          title="15+ Years of Clinical Milestones"
+          title="10+ Years of Clinical Milestones"
           description="A legacy built on patient trust, technical innovation, and clinical dedication."
           centered={true}
         />

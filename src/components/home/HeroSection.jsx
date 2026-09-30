@@ -124,7 +124,7 @@ const HeroSection = () => {
                       fontSize: '0.75rem',
                     }}
                   >
-                    15+ Years Clinical Expertise
+                    10+ Years Clinical Expertise
                   </Typography>
                 </Box>
               </Stack>
@@ -257,7 +257,7 @@ const HeroSection = () => {
               {/* Quick Trust Highlights */}
               <Grid container spacing={2}>
                 {[
-                  { label: '5000+ Happy Patients', icon: ShieldIcon },
+                  { label: '500+ Happy Patients', icon: ShieldIcon },
                   { label: '3D Eye Crypt Matching', icon: AutoAwesomeIcon },
                   { label: 'Bio-Compatible Acrylic', icon: VerifiedUserIcon },
                 ].map((item, i) => (

@@ -7,8 +7,8 @@ export const DOCTOR = {
     'FSCEH (Delhi)',
     'Fellow – Silverline Laboratories'
   ],
-  experience: '15+ Years',
-  patientsHelped: '5000+',
+  experience: '10+ Years',
+  patientsHelped: '500+',
   mission: 'To provide every patient with the highest quality artificial eye prosthetics, combining technical precision with compassionate care, restoring not just appearance but confidence and quality of life.',
   vision: 'To be India\'s most trusted centre for ocular prosthetics, setting new standards in patient care, quality, and innovation in the field of artificial eye fabrication.',
   specializations: [
@@ -25,11 +25,11 @@ export const DOCTOR = {
     { year: '2015', title: 'Advanced Training', description: 'Completed advanced training in maxillofacial prosthetics from a premier medical institution.' },
     { year: '2018', title: '3000 Patients', description: 'Expanded services and reached 3000 patients across Uttar Pradesh and neighboring states.' },
     { year: '2020', title: 'Telemedicine Launch', description: 'Launched telemedicine consultations to reach patients across India during the pandemic.' },
-    { year: '2024', title: '5000+ Patients', description: 'Achieved the milestone of 5000+ satisfied patients with a 98% satisfaction rate.' },
+    { year: '2024', title: '500+ Patients', description: 'Achieved the milestone of 500+ satisfied patients with a 98% satisfaction rate.' },
   ],
   about: `Mr. Shashank Mishra is one of India's most experienced and skilled ocular prosthetics specialists, with over 15 years of dedicated practice in artificial eye fabrication and ocular prosthetics. 
 
-Based at UB Eye Care in Uttar Pradesh, Mr. Mishra has transformed the lives of over 5000 patients by providing them with custom-made artificial eyes that look and feel completely natural.
+Based at UB Eye Care in Uttar Pradesh, Mr. Mishra has transformed the lives of over 500 patients by providing them with custom-made artificial eyes that look and feel completely natural.
 
 His journey began with a deep commitment to helping patients who had suffered the loss of an eye – whether due to trauma, disease, or cancer – to reclaim their appearance, confidence, and quality of life. He combines technical mastery with genuine compassion, treating every patient with the care and attention they deserve.
 

@@ -19,8 +19,8 @@ export const SITE_CONFIG = {
 };
 
 export const STATS = [
-  { value: 5000, suffix: '+', label: 'Patients Treated', icon: 'people' },
-  { value: 15, suffix: '+', label: 'Years Experience', icon: 'star' },
+  { value: 500, suffix: '+', label: 'Patients Treated', icon: 'people' },
+  { value: 10, suffix: '+', label: 'Years Experience', icon: 'star' },
   { value: 98, suffix: '%', label: 'Patient Satisfaction', icon: 'thumb_up' },
   { value: 100, suffix: '%', label: 'Customized Artificial Eye', icon: 'verified' },
 ];
